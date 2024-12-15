@@ -1,0 +1,258 @@
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](background_cool)\
+$os\
+$username\
+[](bg:color1_cool fg:background_cool)\
+$directory\
+[](fg:color1_cool bg:color6_warm)\
+$git_branch\
+$git_status\
+[](fg:color6_warm bg:color1_warm)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[ ](fg:color1_warm)\
+$fill\
+$time\
+$cmd_duration\
+$line_break$character"""
+
+palette = 'my_palette'
+
+[palettes.my_palette]
+background_warm = "#13121f"
+background_cool = "#03142C"
+foreground_warm = "#dfd0c2"
+foreground_cool = "#eaccc4"
+cursor_warm = "#dfd0c2"
+cursor_cool = "#eaccc4"
+color0_warm = "#13121f"
+color1_warm = "#B54A47"
+color2_warm = "#8B767E"
+color3_warm = "#D66052"
+color4_warm = "#EA7548"
+color5_warm = "#F08C4A"
+color6_warm = "#E8BE6F"
+color7_warm = "#dfd0c2"
+color8_warm = "#9c9187"
+color0_cool = "#03142C"
+color1_cool = "#1E6E8B"
+color2_cool = "#647185"
+color3_cool = "#2D94A8"
+color4_cool = "#5AA5B2"
+color5_cool = "#59BCC8"
+color6_cool = "#A9BEBC"
+color7_cool = "#eaccc4"
+color8_cool = "#a38e89"
+
+[os]
+disabled = false
+style = "bg:background_cool fg:color6_warm"
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = ""
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+
+[username]
+show_always = true
+style_user = "bg:background_cool fg:color6_warm"
+style_root = "bg:background_cool fg:color3_warm"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:foreground_warm bg:color1_cool"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = ""
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:color6_warm"
+format = '[[ $symbol $branch ](fg:color0_cool bg:color6_warm)]($style)'
+
+[git_status]
+style = "bg:color6_warm"
+format = '[[($all_status$ahead_behind )](fg:color0_cool bg:color6_warm)]($style)'
+
+[nodejs]
+symbol = "󰎙"
+style = "bg:color1_warm"
+format = '[[ $symbol( $version) ](fg:color7_warm bg:color1_warm)]($style)'
+
+[c]
+symbol = " "
+style = "bg:color1_warm"
+format = '[[ $symbol( $version) ](fg:color7_warm bg:color1_warm)]($style)'
+
+[rust]
+symbol = "󱘗"
+style = "bg:color1_warm"
+format = '[[ $symbol( $version) ](fg:color7_warm bg:color1_warm)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:color1_warm"
+format = '[[ $symbol( $version) ](fg:color7_warm bg:color1_warm)]($style)'
+
+[php]
+symbol = ""
+style = "bg:color1_warm"
+format = '[[ $symbol( $version) ](fg:color7_warm bg:color1_warm)]($style)'
+
+[java]
+symbol = " "
+style = "bg:color1_warm"
+format = '[[ $symbol( $version) ](fg:color7_warm bg:color1_warm)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:color1_warm"
+format = '[[ $symbol( $version) ](fg:color7_warm bg:color1_warm)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:color1_warm"
+format = '[[ $symbol( $version) ](fg:color7_warm bg:color1_warm)]($style)'
+
+[python]
+symbol = ""
+style = "bg:color1_warm"
+format = '[[ $symbol( $version) ](fg:color7_warm bg:color1_warm)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:mantle"
+format = '[[ $symbol( $context) ](fg:#83a598 bg:purple)]($style)'
+
+[fill]
+symbol = " "
+
+[cmd_duration]
+min_time = 0
+show_milliseconds = true
+format = "[$duration](color1_warm)"
+
+[time]
+disabled = false
+time_format = "%R"
+format = '[  $time ](fg:color7_warm)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[󰄾](bold fg:color5_cool)'
+error_symbol = '[󰄾](bold fg:color3_warm)'
+vimcmd_symbol = '[󰄽](bold fg:color5_cool)'
+vimcmd_replace_one_symbol = '[󰄽](bold fg:purple)'
+vimcmd_replace_symbol = '[󰄽](bold fg:purple)'
+vimcmd_visual_symbol = '[󰄽](bold fg:magenta)'
+
+# [palettes.tokyonight]
+# bg = "#222436"
+# dark_blue = "#040c36"
+# bg_dark = "#1e2030"
+# bg_highlight = "#2f334d"
+# blue = "#82aaff"
+# blue0 = "#3e68d7"
+# blue1 = "#65bcff"
+# blue2 = "#0db9d7"
+# blue5 = "#89ddff"
+# blue6 = "#b4f9f8"
+# blue7 = "#394b70"
+# comment = "#636da6"
+# cyan = "#86e1fc"
+# dark3 = "#545c7e"
+# dark5 = "#737aa2"
+# fg = "#c8d3f5"
+# fg_dark = "#828bb8"
+# fg_gutter = "#3b4261"
+# green = "#40b8ab"
+# green1 = "#358f8e"
+# green2 = "#0a3b58"
+# magenta = "#c099ff"
+# magenta2 = "#ff007c"
+# orange = "#fc997b"
+# purple = "#fca7ea"
+# red = "#f9706a"
+# red1 = "#c53b53"
+# teal = "#4fd6be"
+# terminal_black = "#444a73"
+# yellow = "#fbc883"
+# gitadd = "#b8db87"
+# gitchange = "#7ca1f2"
+# gitdelete = "#e26a75"
+
+# [palettes.gruvbox_dark]
+# color_fg0 = '#fbf1c7'
+# color_bg1 = '#3c3836'
+# color_bg3 = '#665c54'
+# color_blue = '#458588'
+# color_aqua = '#689d6a'
+# color_green = '#98971a'
+# color_orange = '#d65d0e'
+# color_purple = '#b16286'
+# color_red = '#cc241d'
+# color_yellow = '#d79921'
+
+# [palettes.catppuccin_mocha]
+# rosewater = "#f5e0dc"
+# flamingo = "#f2cdcd"
+# pink = "#f5c2e7"
+# orange = "#cba6f7"
+# red = "#f38ba8"
+# maroon = "#eba0ac"
+# peach = "#fab387"
+# yellow = "#f9e2af"
+# green = "#a6e3a1"
+# teal = "#94e2d5"
+# sky = "#89dceb"
+# sapphire = "#74c7ec"
+# blue = "#89b4fa"
+# lavender = "#b4befe"
+# text = "#cdd6f4"
+# subtext1 = "#bac2de"
+# subtext0 = "#a6adc8"
+# overlay2 = "#9399b2"
+# overlay1 = "#7f849c"
+# overlay0 = "#6c7086"
+# surface2 = "#585b70"
+# surface1 = "#45475a"
+# surface0 = "#313244"
+# base = "#1e1e2e"
+# mantle = "#181825"
+# crust = "#11111b"

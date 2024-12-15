@@ -1,0 +1,89 @@
+/*
+background_warm = #13121f
+background_cool = #03142C @background
+foreground_warm = #dfd0c2
+foreground_cool = #eaccc4 @foreground
+cursor_warm = #dfd0c2
+cursor_cool = #eaccc4
+color0_warm = #13121f
+color1_warm = #B54A47
+color2_warm = #8B767E
+color3_warm = #D66052
+color4_warm = #EA7548
+color5_warm = #F08C4A
+color6_warm = #E8BE6F
+color7_warm = #dfd0c2
+color8_warm = #9c9187
+color0_cool = #03142C
+color1_cool = #1E6E8B
+color2_cool = #647185
+color3_cool = #2D94A8
+color4_cool = #5AA5B2
+color5_cool = #59BCC8
+color6_cool = #A9BEBC
+color7_cool = #eaccc4
+color8_cool = #a38e89
+*/
+
+*{
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+window {
+  font-size: 14px;
+  font-family: "Fira Code Nerd Font";
+  background-color: #03142c;
+  border-radius: 8px;
+  opacity: 0.8;
+}
+
+#outer-box {
+  margin: 10px 10px 20px 10px;
+  background-color: #03142c;
+  opacity: 1;
+}
+
+#inner-box {
+  margin: 10px;
+  background-color: #03142c;
+  opacity: 0.8;
+}
+
+#entry {
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+#entry #text {
+  padding: 0px 0px 0px 10px;
+  font-weight: normal;
+  color: #dfd0c2;
+}
+
+#entry:selected {
+  background-color: #1e6e8b;
+}
+
+#entry:selected #text {
+  padding: 0px 0px 0px 10px;
+  font-weight: normal;
+  color: #03142c;
+}
+
+#input {
+  background: transparent;
+  margin: 0px 5px 0px 20px;
+  color: #dfd0c2;
+  padding: 5px;
+}
+
+#image {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#scroll {
+  margin: 0px;
+}

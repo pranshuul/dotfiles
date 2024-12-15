@@ -1,0 +1,106 @@
+/*
+background_warm = #13121f
+background_cool = #03142C @background
+foreground_warm = #dfd0c2
+foreground_cool = #eaccc4 @foreground
+cursor_warm = #dfd0c2
+cursor_cool = #eaccc4
+color0_warm = #13121f
+color1_warm = #B54A47
+color2_warm = #8B767E
+color3_warm = #D66052
+color4_warm = #EA7548
+color5_warm = #F08C4A
+color6_warm = #E8BE6F
+color7_warm = #dfd0c2
+color8_warm = #9c9187
+color0_cool = #03142C
+color1_cool = #1E6E8B
+color2_cool = #647185
+color3_cool = #2D94A8
+color4_cool = #5AA5B2
+color5_cool = #59BCC8
+color6_cool = #A9BEBC
+color7_cool = #eaccc4
+color8_cool = #a38e89
+*/
+
+
+* {
+    font-family: 'Radio Canada Big', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #03121f;
+}
+
+#workspaces button {
+    color: #59bcc8;
+}
+
+#workspaces {
+    background-color: #03121f;
+    padding: 0 5.6px 0 0;
+}
+
+.modules-left {
+    margin-left: 12px;    
+}
+
+.modules-right {
+    margin-right: 12px;    
+}
+
+#battery,
+#pulseaudio,
+#backlight,
+#custom-weather {
+    color: #59bcc8; /* color5 */
+    background-color: #03121f; /* background */
+    margin: 0 15px 0 0px;
+    padding: 0 15px 0 15px; /* top, right, bottom, left */
+}
+
+#network {
+    color: #a38e89; /* color2 */
+    background-color: #03121f; /* background */
+    margin: 0 0px 0 0px;
+    padding: 0 15px 0 15px; /* top, right, bottom, left */
+}
+
+#clock {
+    color: #2d94a8; /* color3 */
+    background-color: #03121f; /* background */
+    margin: 0 15px 0 0;
+    padding: 0 15px 0 15px;
+}
+
+#network {
+    color: #5aa5b2; /* color4 */
+}
+
+#pulseaudio {
+    color: #59bcc8; /* color5 */
+}
+
+#backlight {
+    color: #59bcc8; /* color5 */
+}
+
+#custom-weather {
+    font-family: 'Weather Icons', 'Radio Canada Big', sans-serif;
+    color: #5aa5b2; /* color2 */
+    background-color: #03121f; /* background */
+    padding: 0 15px 0 15px; /* top, right, bottom, left */
+}
+
+#custom-media {
+    color: #5aa5b2; /* color2 */
+    background-color: #03121f; /* background */
+    margin: 0 0px 0 15px;
+    padding: 0 15px 0 15px; /* top, right, bottom, left */
+}
