@@ -19,6 +19,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+alias h='hyprland'
 alias hx='helix'
 alias n='nvim'
 alias z='echo "Use \"cd\" instead"'
