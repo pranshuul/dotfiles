@@ -24,21 +24,21 @@ alias hx='helix'
 alias n='nvim'
 alias z='echo "Use \"cd\" instead"'
 alias yz='yazi'
-alias config='cd ~/dotfiles/'
-alias ls='eza --icons=always'
+alias config='cd ~/.mydotfiles/com.ml4w.dotfiles/.config/'
+# alias ls='eza --icons=always'
 alias tree='ls --tree'
 alias s='locate'
 alias wh='which'
-alias bye='shutdown now'
+alias bye='shutdown'
 
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-export HYPRSHOT_DIR=~/Pictures/Screenshots
-export XDG_PICTURES_DIR=~/Pictures/Screenshots
+# export STARSHIP_CONFIG=~/.config/starship/starship.toml
+# export HYPRSHOT_DIR=~/Pictures/Screenshots
+# export XDG_PICTURES_DIR=~/Pictures/Screenshots
 
 
-(cat ~/.config/wpg/sequences &)
+# (cat ~/.config/wpg/sequences &)
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 eval "$(thefuck --alias tf)"
 eval "$(zoxide init --cmd cd zsh)"
 
