@@ -23,17 +23,20 @@ alias h='hyprland'
 alias hx='helix'
 alias n='nvim'
 alias z='echo "Use \"cd\" instead"'
-alias yz='yazi'
+alias y='yazi'
 alias lg='lazygit'
 alias ld='lazydocker'
 alias cfgm='cd ~/.mydotfiles/com.ml4w.dotfiles/.config/'
 alias cfgc='cd ~/dotfiles/'
+alias cfgz='n ~/.zshrc_custom'
 alias uni='cd ~/IIITH/'
 # alias ls='eza --icons=always'
 alias tree='ls --tree'
 alias s='locate'
 alias wh='which'
-alias bye='shutdown'
+alias bye='systemctl poweroff'
+alias cls='clear && ff'
+alias mp1='~/IIITH/sem3/OSN/Projects/mini-project-1-pranshuul/shell.out'
 
 # export STARSHIP_CONFIG=~/.config/starship/starship.toml
 # export HYPRSHOT_DIR=~/Pictures/Screenshots
@@ -45,6 +48,7 @@ alias bye='shutdown'
 # eval "$(starship init zsh)"
 eval "$(thefuck --alias tf)"
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(atuin init zsh)"
 
 source /usr/share/zsh//plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh//plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
