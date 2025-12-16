@@ -32,12 +32,17 @@ alias cfgz='n ~/.zshrc_custom'
 alias uni='cd ~/IIITH/'
 # alias ls='eza --icons=always'
 alias tree='ls --tree'
+alias lo='ls --oneline'
 alias s='locate'
 alias wh='which'
 alias bye='systemctl poweroff'
 alias cls='clear && ff'
 alias nosleep='killall hypridle'
+alias mssd='sudo mount -t exfat /dev/sda1 /media/pran_ext'
+alias ussd='sudo umount /media/pran_ext'
 alias mp1='~/IIITH/sem3/OSN/Projects/mini-project-1-pranshuul/shell.out'
+alias ci='cdi'
+alias py='python3'
 
 function cy() {
     local tmp="$(mktemp)"
